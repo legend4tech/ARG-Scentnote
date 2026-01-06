@@ -102,7 +102,7 @@ export default function ProductsSection() {
             Our Signature{" "}
             <span className="text-gradient-gold">Collections</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-light">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto ">
             Premium fragrances crafted for those who appreciate luxury
           </p>
           <div className="w-16 h-px bg-linear-to-r from-transparent via-primary to-transparent mx-auto mt-8" />
@@ -137,7 +137,7 @@ export default function ProductsSection() {
                     <h3 className="font-display text-xl font-medium text-foreground mb-2">
                       {product.name}
                     </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed font-light">
+                    <p className="text-sm text-muted-foreground leading-relaxed ">
                       {product.description}
                     </p>
                   </div>

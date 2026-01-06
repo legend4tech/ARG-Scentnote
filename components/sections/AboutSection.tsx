@@ -50,7 +50,7 @@ export default function AboutSection() {
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-4">
             About <span className="text-gradient-gold">ARG Scentnote</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-light">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto ">
             Where luxury meets longevity. Crafting signature fragrances that
             speak before you do.
           </p>
@@ -64,11 +64,11 @@ export default function AboutSection() {
               Crafted for Confidence, Class, and Individuality
             </h3>
 
-            <div className="space-y-5 text-muted-foreground leading-relaxed font-light">
+            <div className="space-y-5 text-muted-foreground leading-relaxed  text-lg">
               <p>
                 <strong className="text-foreground font-medium">
                   ARG Scentnote (Argescent Perfumes)
-                </strong>{" "}
+                </strong>
                 is a luxury fragrance brand dedicated to crafting long-lasting,
                 high-quality perfumes that express confidence, class, and
                 individuality.
@@ -158,7 +158,7 @@ export default function AboutSection() {
                 <h4 className="font-display text-lg font-medium text-foreground mb-2">
                   {feature.title}
                 </h4>
-                <p className="text-sm text-muted-foreground font-light">
+                <p className="text-sm text-muted-foreground ">
                   {feature.description}
                 </p>
               </motion.div>

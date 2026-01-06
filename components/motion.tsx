@@ -5,6 +5,7 @@
 
 import { motion, Variants, useInView } from "framer-motion";
 import { ReactNode, useRef } from "react";
+import Image from "next/image";
 
 // Animation variants for different effects
 export const fadeInUp: Variants = {
@@ -214,12 +215,16 @@ interface ParallaxImageProps {
   src: string;
   alt: string;
   className?: string;
+  width?: number;
+  height?: number;
 }
 
 export function ParallaxImage({
   src,
   alt,
   className = "",
+  width = 800,
+  height = 600,
 }: ParallaxImageProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -230,9 +235,15 @@ export function ParallaxImage({
       initial={{ opacity: 0, scale: 1.1 }}
       animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 1.1 }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-      className={`overflow-hidden ${className}`}
+      className={`overflow-hidden relative ${className}`}
     >
-      <img src={src} alt={alt} className="w-full h-full object-cover" />
+      <Image
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        className="w-full h-full object-cover"
+      />
     </motion.div>
   );
 }

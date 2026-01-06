@@ -64,7 +64,7 @@ export default function WhyChooseSection() {
           <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-medium text-foreground mb-4">
             Why Choose <span className="text-gradient-gold">ARG Scentnote</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-light">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto ">
             Experience the difference of truly premium fragrances
           </p>
           <div className="w-16 h-px bg-linear-to-r from-transparent via-primary to-transparent mx-auto mt-8" />
@@ -106,7 +106,7 @@ export default function WhyChooseSection() {
                 <h3 className="font-display text-lg font-medium text-foreground mb-3">
                   {benefit.title}
                 </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed font-light">
+                <p className="text-sm text-muted-foreground leading-relaxed ">
                   {benefit.description}
                 </p>
               </motion.div>

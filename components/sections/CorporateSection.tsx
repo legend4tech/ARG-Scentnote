@@ -51,7 +51,7 @@ export default function CorporateSection() {
             Custom Branding &{" "}
             <span className="text-gradient-gold">Corporate Gifting</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-3xl mx-auto font-light">
+          <p className="text-muted-foreground text-lg max-w-3xl mx-auto ">
             Elevate your brand or celebrate special occasions with personalized
             luxury fragrances
           </p>
@@ -83,7 +83,7 @@ export default function CorporateSection() {
                     <h4 className="font-display text-base font-medium text-foreground mb-1">
                       {feature.title}
                     </h4>
-                    <p className="text-sm text-muted-foreground font-light">
+                    <p className="text-sm text-muted-foreground ">
                       {feature.description}
                     </p>
                   </div>
@@ -130,15 +130,23 @@ export default function CorporateSection() {
           >
             <motion.div
               className="aspect-4/3 rounded-2xl overflow-hidden"
-              whileHover={{ scale: 1.02 }}
-              transition={{ duration: 0.4 }}
+              animate={{ scale: [1, 1.08, 1] }}
+              transition={{
+                duration: 6,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
             >
               <motion.img
                 src="/corporate-gifting.jpg"
                 alt="Corporate gift perfumes with custom branding"
                 className="w-full h-full object-cover"
-                whileHover={{ scale: 1.08 }}
-                transition={{ duration: 0.6 }}
+                animate={{ scale: [1, 1.08, 1] }}
+                transition={{
+                  duration: 6,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
               />
             </motion.div>
             {/* Decorative elements */}
