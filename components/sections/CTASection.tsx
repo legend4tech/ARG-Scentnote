@@ -105,7 +105,7 @@ export default function CTASection() {
                 transition={{ delay: 0.4 + index * 0.1, duration: 0.4 }}
               >
                 <motion.div
-                  className="w-14 h-14 rounded-full bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center mb-4"
+                  className="w-14 h-14 rounded-full bg-linear-to-br from-gold to-gold-dark flex items-center justify-center mb-4"
                   whileHover={{ scale: 1.1 }}
                   transition={{ duration: 0.2 }}
                 >
@@ -113,7 +113,7 @@ export default function CTASection() {
                     {step.number}
                   </span>
                 </motion.div>
-                <p className="text-ivory/70 text-sm max-w-[160px] font-light">
+                <p className="text-ivory/70 text-sm max-w-40 font-light">
                   {step.text}
                 </p>
               </motion.div>

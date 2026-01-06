@@ -73,7 +73,7 @@ export default function CorporateSection() {
                   transition={{ duration: 0.3 }}
                 >
                   <motion.div
-                    className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0"
+                    className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0"
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.2 }}
                   >
@@ -129,7 +129,7 @@ export default function CorporateSection() {
             className="relative"
           >
             <motion.div
-              className="aspect-[4/3] rounded-2xl overflow-hidden"
+              className="aspect-4/3 rounded-2xl overflow-hidden"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.4 }}
             >

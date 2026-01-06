@@ -137,7 +137,7 @@ export default function HeroCarousel() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full h-screen min-h-[700px] overflow-hidden"
+      className="relative w-full h-screen min-h-175 overflow-hidden"
     >
       {/* Background Image Carousel with Parallax */}
       <motion.div className="absolute inset-0" style={{ y }}>
@@ -168,7 +168,7 @@ export default function HeroCarousel() {
             {/* Animated gradient mesh overlay */}
             <div className="absolute inset-0">
               <motion.div
-                className="absolute inset-0 bg-gradient-to-br from-charcoal/70 via-charcoal/50 to-transparent"
+                className="absolute inset-0 bg-linear-to-br from-charcoal/70 via-charcoal/50 to-transparent"
                 animate={{
                   background: [
                     "linear-gradient(to bottom right, rgba(61, 50, 41, 0.7), rgba(61, 50, 41, 0.5), transparent)",
@@ -187,7 +187,7 @@ export default function HeroCarousel() {
         </AnimatePresence>
 
         {/* Enhanced gradient overlays */}
-        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-transparent to-charcoal/90" />
+        <div className="absolute inset-0 bg-linear-to-b from-charcoal/60 via-transparent to-charcoal/90" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.4)_100%)]" />
       </motion.div>
 
@@ -444,7 +444,7 @@ export default function HeroCarousel() {
           initial={{ scaleX: 0 }}
         >
           <motion.div
-            className="h-full bg-gradient-to-r from-gold to-gold-light origin-left"
+            className="h-full bg-linear-to-r from-gold to-gold-light origin-left"
             animate={{ scaleX: 1 }}
             transition={{
               duration: 6,

@@ -105,7 +105,7 @@ export default function ProductsSection() {
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto font-light">
             Premium fragrances crafted for those who appreciate luxury
           </p>
-          <div className="w-16 h-[1px] bg-gradient-to-r from-transparent via-primary to-transparent mx-auto mt-8" />
+          <div className="w-16 h-px bg-linear-to-r from-transparent via-primary to-transparent mx-auto mt-8" />
         </AnimatedSection>
 
         {/* Products Grid */}
@@ -121,7 +121,7 @@ export default function ProductsSection() {
                 transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
               >
                 {/* Product Image */}
-                <div className="aspect-[4/5] overflow-hidden">
+                <div className="aspect-4/5 overflow-hidden">
                   <motion.img
                     src={product.image}
                     alt={product.name}

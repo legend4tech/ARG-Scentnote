@@ -93,7 +93,7 @@ export default function AboutSection() {
             </div>
 
             {/* Decorative line */}
-            <div className="w-16 h-[1px] bg-gradient-to-r from-primary via-primary/50 to-transparent" />
+            <div className="w-16 h-px bg-linear-to-r from-primary via-primary/50 to-transparent" />
           </AnimatedSection>
 
           {/* Image */}
@@ -108,7 +108,7 @@ export default function AboutSection() {
             }}
             className="relative"
           >
-            <div className="aspect-[4/5] rounded-2xl overflow-hidden">
+            <div className="aspect-4/5 rounded-2xl overflow-hidden">
               <motion.img
                 src="/hero-perfume-1.jpg"
                 alt="ARG Scentnote luxury perfume"
